@@ -4,10 +4,16 @@ const Posts = require('../model/post');
 
 const posts = {
   async getPosts(req, res) {
+    /**
+     * #swagger.tags = ['Posts']
+     */
     const allPosts = await Posts.find();
     handleSuccess(res, allPosts);
   },
   async createdPosts(req, res) {
+    /**
+     * #swagger.tags = ['Posts']
+     */
     try {
       const { body } = req;
 
@@ -22,7 +28,7 @@ const posts = {
       } else {
         handleError(res);
       }
-    } catch (err){
+    } catch (err) {
       handleError(res, err);
     }
   }

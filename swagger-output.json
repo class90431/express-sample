@@ -16,13 +16,17 @@
   "paths": {
     "/api/posts/": {
       "get": {
-        "tags": [],
+        "tags": [
+          "Posts"
+        ],
         "description": "",
         "parameters": [],
         "responses": {}
       },
       "post": {
-        "tags": [],
+        "tags": [
+          "Posts"
+        ],
         "description": "",
         "parameters": [],
         "responses": {}
